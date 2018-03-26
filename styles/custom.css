@@ -1,0 +1,101 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+body
+{
+	background: #3498db;
+}
+
+.phone-container {
+	width: 	100%;
+	height: 640px;
+	display:inline-block;
+}
+
+.header-phone {
+	text-align: center;
+	margin: 0 auto;
+	width: 380px;
+	background: #ffffff;
+	height: 50px;
+	padding:2px 0px 0px 0px;
+}
+
+.phone-icons {
+	float:left;
+	margin-left: 3px;
+}
+
+.contact-avatar {
+	float: right;
+}
+
+.contact-name {
+	line-height: 50px;
+	margin: 0 auto;
+	font-size: 18px;
+}
+
+div.app {
+	margin: 0 auto;
+	width: 380px;
+	height: 520px;
+	background: #2c3e50;
+	overflow-y: scroll;
+	border-top: solid #2c3e50;
+	display: none;
+}
+
+div.introduction {
+	margin: 0 auto;
+	width: 380px;
+	height: 520px;
+	background: #16a085;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 100px;
+}
+
+div.intro-content {
+	margin: 0 10px 0 10px;
+}
+
+.recipient {
+	padding: 10px 10px 10px 10px;
+	background: #ecf0f1;
+	min-height: 50px;
+	width: 250px;
+	margin-bottom: 20px;
+	float: left
+
+}
+
+.sender {
+	padding: 10px 10px 10px 10px;
+	background: #2980b9;
+	min-height: 50px;
+	width: 250px;
+	margin-bottom: 20px;
+	float: right;
+	color: #ffffff;
+}
+
+.choices {
+	margin: 0 auto;
+	background: #ffffff;
+	min-height: 50px;
+	width: 380px;
+	border-bottom: solid #2c3e50;
+	text-align: center;
+	cursor: pointer;
+}
+
+.message {
+	cursor: pointer;
+}
+
+.avatar {
+	display: none;
+}
