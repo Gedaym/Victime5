@@ -49,4 +49,9 @@ jobs:
       - store_artifacts:
           path: test-reports
           destination: test-reports
+deployment:
+  prod:
+    branch: master
+    heroku:
+      appname: foo-bar-123
           
