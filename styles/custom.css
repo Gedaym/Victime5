@@ -100,16 +100,56 @@ div.intro-content {
 	display: none;
 }
 
-@-webkit-keyframes blinker {
-  from {opacity: 1.0;}
-  to {opacity: 0.0;}
-}
-.blink{
-	text-decoration: blink;
-	-webkit-animation-name: blinker;
-	-webkit-animation-duration: 0.6s;
-	-webkit-animation-iteration-count:infinite;
-	-webkit-animation-timing-function:ease-in-out;
-	-webkit-animation-direction: alternate;
-}
+@-moz-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
 
+@-webkit-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+}
+/* IE */
+@-ms-keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+/* Opera and prob css3 final iteration */
+@keyframes blink {
+    0% {
+        opacity:1;
+    }
+    50% {
+        opacity:0;
+    }
+    100% {
+        opacity:1;
+    }
+} 
+.blink-image {
+    -moz-animation: blink normal 2s infinite ease-in-out; /* Firefox */
+    -webkit-animation: blink normal 2s infinite ease-in-out; /* Webkit */
+    -ms-animation: blink normal 2s infinite ease-in-out; /* IE */
+    animation: blink normal 2s infinite ease-in-out; /* Opera and prob css3 final iteration */
+}
